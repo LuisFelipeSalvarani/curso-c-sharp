@@ -6,12 +6,12 @@ class Program
 {
     static void Main()
     {
-        Carro meuCarro = new Carro();
+        double numero1 = 3.14;
+        float numero2 = 3.14f;
+        decimal numero3 = 3.14m;
 
-        meuCarro.Ligar();
+        int numero4 = 1_000;
 
-        meuCarro.Desligar();
-
-        meuCarro.Teste2();
+        Console.WriteLine(numero4);
     }
 }
