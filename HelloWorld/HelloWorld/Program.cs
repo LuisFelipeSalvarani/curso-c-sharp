@@ -1,4 +1,4 @@
-﻿using System.Text;
+﻿using System.Globalization;
 
 namespace HelloWorld;
 
@@ -6,28 +6,21 @@ class Program
 {
     static void Main()
     {
-        //string texto1 = "A primeira frase.";
-        //string texto2 = "Segunda frase";
+        DateOnly dia = new DateOnly(2023, 12, 1);
 
-        //string paragrafo = texto1 + " " + 7 + " " + true + " " + texto2;
-        //string paragrafo2 = $"{texto1} {7} {true} {texto2}";
+        //string diaEmTexto = dia.ToShortDateString();
+        //string diaEmTexto = dia.ToLongDateString();
+        string diaEmTexto = dia.ToString("dd/MMMMM/yyyy", new CultureInfo("pt-BR"));
 
-        ////string caminho = "C:\\teste";
-        //string caminho = @"C:\teste";
+        DateTime diaHora = new DateTime(2023, 12, 1, 20, 07, 1);
 
-        //StringBuilder stringBuilder = new StringBuilder();
+        //DateTime hojeComHora = DateTime.Now;
+        DateTime hojeComHora = DateTime.UtcNow;
+        DateTime hoje = DateTime.Today;
 
-        //stringBuilder.Append(paragrafo);
-        //stringBuilder.Append(paragrafo2);
+        DateTime novaData = hoje.AddDays(1);
 
-        //string resultado = stringBuilder.ToString();
-
-        //Console.WriteLine(resultado);
-
-        string texto = "O usuário {0} gosta do numero {1}";
-
-        string resultado = string.Format(texto, "Felipe", 13);
-
-        Console.WriteLine(resultado);
+        Console.WriteLine(hojeComHora);
+        Console.WriteLine(novaData);
     }
 }
