@@ -1,4 +1,4 @@
-﻿using HelloWorld.Teste;
+﻿using System.Text;
 
 namespace HelloWorld;
 
@@ -6,25 +6,28 @@ class Program
 {
     static void Main()
     {
-        char letra = 'a';
-        char numero = '1';
-        char caracter = '@';
-        char espaco = ' ';
+        //string texto1 = "A primeira frase.";
+        //string texto2 = "Segunda frase";
 
-        string texto = "Este curso é muito bom";
-        char primeiraLetraDoTexto = texto[0];
+        //string paragrafo = texto1 + " " + 7 + " " + true + " " + texto2;
+        //string paragrafo2 = $"{texto1} {7} {true} {texto2}";
 
-        string meuNome = "              Felipe           ";
-        string nomeSemEspaco = meuNome.Trim();
+        ////string caminho = "C:\\teste";
+        //string caminho = @"C:\teste";
 
-        string textoAposReplace = nomeSemEspaco.Replace("e", "3");
+        //StringBuilder stringBuilder = new StringBuilder();
 
-        Console.WriteLine(meuNome);
-        Console.WriteLine(nomeSemEspaco);
-        Console.WriteLine(textoAposReplace);
+        //stringBuilder.Append(paragrafo);
+        //stringBuilder.Append(paragrafo2);
 
-        bool existe = texto.Equals("Este curso é muito bom.");
+        //string resultado = stringBuilder.ToString();
 
-        Console.WriteLine(existe);
+        //Console.WriteLine(resultado);
+
+        string texto = "O usuário {0} gosta do numero {1}";
+
+        string resultado = string.Format(texto, "Felipe", 13);
+
+        Console.WriteLine(resultado);
     }
 }
