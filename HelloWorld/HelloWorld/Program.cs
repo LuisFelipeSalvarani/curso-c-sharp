@@ -1,3 +1,3 @@
-﻿Console.WriteLine("Hello, World!");
+﻿namespace HelloWorld;
 
-Console.WriteLine("Este é o meu primeiro programa");
+
