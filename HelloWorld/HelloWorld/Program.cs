@@ -4,12 +4,10 @@ class Program
 {
     static void Main()
     {
-        HashSet<int> set = new HashSet<int>();
+        var metematica = new OperacoesMatematicas();
 
-        set.Add(1);
-        set.Add(2);
-        set.Add(1);
+        metematica.Adicionar(valor1: 1, valor2: 7);
 
-        Console.WriteLine(set.Count);
+        metematica.Subtrair(valor2: 1, valor1: 7);
     }
 }
