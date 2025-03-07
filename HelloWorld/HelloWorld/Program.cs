@@ -4,13 +4,14 @@ class Program
 {
     static void Main()
     {
-        var numero = 0;
+        var numero = 10;
 
-        while (numero < 10)
+        do
         {
             Console.WriteLine("Teste");
 
             numero++;
         }
+        while (numero < 10);
     }
 }
