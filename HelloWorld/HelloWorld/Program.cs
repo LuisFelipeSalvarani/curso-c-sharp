@@ -4,23 +4,20 @@ namespace HelloWorld;
 
 class Program
 {
+    enum NivelDeDificuldade
+    {
+        Baixo = 0,
+        Medio = 1,
+        Alto = 2
+    }
+
     static void Main()
     {
-        DateOnly dia = new DateOnly(2023, 12, 1);
+        NivelDeDificuldade nivel = NivelDeDificuldade.Alto;
 
-        //string diaEmTexto = dia.ToShortDateString();
-        //string diaEmTexto = dia.ToLongDateString();
-        string diaEmTexto = dia.ToString("dd/MMMMM/yyyy", new CultureInfo("pt-BR"));
+        int nivelInteiro = (int)nivel;
 
-        DateTime diaHora = new DateTime(2023, 12, 1, 20, 07, 1);
-
-        //DateTime hojeComHora = DateTime.Now;
-        DateTime hojeComHora = DateTime.UtcNow;
-        DateTime hoje = DateTime.Today;
-
-        DateTime novaData = hoje.AddDays(1);
-
-        Console.WriteLine(hojeComHora);
-        Console.WriteLine(novaData);
+        Console.WriteLine(nivel);
+        Console.WriteLine(nivelInteiro);
     }
 }
