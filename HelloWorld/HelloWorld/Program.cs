@@ -4,21 +4,13 @@ class Program
 {
     static void Main()
     {
-        var lista = new List<string> { "Felipe", "Luis", "Vitor" };
-        var dicionario = new Dictionary<string, string>();
+        var numero = 0;
 
-        dicionario.Add("Nome1", "Felipe");
-        dicionario.Add("Nome2", "Luis");
-        dicionario.Add("Nome3", "Vitor");
-
-        foreach (var nome in lista)
-            Console.WriteLine(nome);
-        
-
-        foreach (var item in dicionario)
+        while (numero < 10)
         {
-            Console.WriteLine(item.Key);
-            Console.WriteLine(item.Value);
+            Console.WriteLine("Teste");
+
+            numero++;
         }
     }
 }
