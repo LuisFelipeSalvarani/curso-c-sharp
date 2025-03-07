@@ -4,8 +4,16 @@ class Program
 {
     static void Main()
     {
-        var resultado = OperacoesMatematicas.Adicionar(1, 2);
+        int numero = 10;
 
-        Console.WriteLine(resultado);
+        var meuCarro = new Carro("Porsche")
+        {
+            Cor = Cor.Vermelho,
+            LancadoEm = new DateOnly(2020, 1, 1)
+        };
+
+        meuCarro.NomeDoModelo();
+
+        Console.WriteLine("Oi");
     }
 }
