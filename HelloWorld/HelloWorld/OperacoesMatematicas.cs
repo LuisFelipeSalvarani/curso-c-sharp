@@ -11,4 +11,9 @@ public class OperacoesMatematicas
 
        return (resultado, "felipe");
     }
+
+    public void Teste(int valor1, int valor2 = 7)
+    {
+        Console.WriteLine(valor1 + valor2);
+    }
 }

@@ -4,11 +4,11 @@ class Program
 {
     static void Main()
     {
-        var metematica = new OperacoesMatematicas();
+        var matematica = new OperacoesMatematicas();
 
-        int soma = metematica.Adicionar(valor1: 1, valor2: 7);
+        int soma = matematica.Adicionar(valor1: 1, valor2: 7);
 
-        Console.WriteLine(soma);
+        //Console.WriteLine(soma);
 
         //var resultado = metematica.Subtrair(valor2: 1, valor1: 7);
 
@@ -16,9 +16,11 @@ class Program
         //Console.WriteLine(resultado.resultado);
         //Console.WriteLine(resultado.autor);
 
-        (int resultado, string nome) = metematica.Subtrair(valor2: 1, valor1: 7);
+        (int resultado, string nome) = matematica.Subtrair(valor2: 1, valor1: 7);
 
-        Console.WriteLine(resultado);
-        Console.WriteLine(nome);
+        //Console.WriteLine(resultado);
+        //Console.WriteLine(nome);
+
+        matematica.Teste(valor1: 2, valor2: 1);
     }
 }
