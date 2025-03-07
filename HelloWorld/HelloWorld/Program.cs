@@ -1,23 +1,15 @@
-﻿using System.Globalization;
-
-namespace HelloWorld;
+﻿namespace HelloWorld;
 
 class Program
 {
-    enum NivelDeDificuldade
-    {
-        Baixo = 0,
-        Medio = 1,
-        Alto = 2
-    }
-
     static void Main()
     {
-        NivelDeDificuldade nivel = NivelDeDificuldade.Alto;
+        string nome = "Felipe Salvarani";
+        int meuNumero = 13;
 
-        int nivelInteiro = (int)nivel;
+        var nome2 = "Felipe Salvarani";
 
-        Console.WriteLine(nivel);
-        Console.WriteLine(nivelInteiro);
+        string meuSobrenome;
+        var variavel = DateTime.Now;
     }
 }
