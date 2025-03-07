@@ -4,27 +4,50 @@ class Program
 {
     static void Main()
     {
-        //int[] inteiros = new int[10];
-        //int[] inteiros = [1,10, 7];
+        List<int> inteiros = new List<int>();
 
-        //inteiros[0] = 1;
-        //inteiros[1] = 10;
-        //inteiros[2] = 7;
+        inteiros.Add(1);
+        inteiros.Add(2);
 
-        //Console.WriteLine(inteiros.Length);
+        //inteiros.Remove(1);
+        //inteiros.RemoveAt(0);
+        inteiros.Clear();
 
+        //int primeiroElemento = inteiros.First();
+        //int primeiroElemento = inteiros.ElementAt(1);
+        //int ultimoElemento = inteiros.Last();
+
+        Console.WriteLine(inteiros.Count);
         //Console.WriteLine(inteiros[0]);
-        //Console.WriteLine(inteiros[1]);
-        //Console.WriteLine(inteiros[2]);
+        //Console.WriteLine(primeiroElemento);
+        //Console.WriteLine(ultimoElemento);
 
-        int[,] inteiros = new int[10,10];
+        List<string> strings = new List<string>();
 
-        inteiros[0, 0] = 1;
-        inteiros[0, 3] = 2;
+        strings.Add("Hello");
+        strings.Add("World");
+        strings.Add("Felipe");
+        strings.Add("Salvarani");
 
-        Console.WriteLine(inteiros[0, 0]);
-        Console.WriteLine(inteiros[0, 1]);
-        Console.WriteLine(inteiros[0, 2]);
-        Console.WriteLine(inteiros[0, 3]);
+        string resultado = string.Join(" ", strings);
+
+        Console.WriteLine(resultado);
+
+        List<int> ints = new List<int>();
+        ints.Add(1);
+
+        List<decimal> decimals = new List<decimal>();
+        decimals.Add(2.5m);
+
+        List<bool> bools = new List<bool>();
+        bools.Add(true);
+
+        List<object> objetos = new List<object>();
+
+        objetos.Add("Hello");
+        objetos.Add(7);
+        objetos.Add(true);
+
+        Console.WriteLine(objetos.Count);
     }
 }
