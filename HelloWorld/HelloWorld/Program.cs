@@ -4,23 +4,29 @@ class Program
 {
     static void Main()
     {
-        var matematica = new OperacoesMatematicas();
+        //var carro = new Carro("Lamborghini");
 
-        int soma = matematica.Adicionar(valor1: 1, valor2: 7);
+        //carro.NomeDoModelo();
 
-        //Console.WriteLine(soma);
+        var carro = new Carro("Lamborghini")
+        {
+            LancadoEm = new DateOnly(2020, 01, 01),
+            Cor = Cor.Amarelo
+        };
 
-        //var resultado = metematica.Subtrair(valor2: 1, valor1: 7);
+        var carro2 = new Carro("Porsche")
+        {
+            LancadoEm = new DateOnly(2019, 01, 01),
+            Cor = Cor.Azul
+        };
 
-        //Console.WriteLine(resultado);
-        //Console.WriteLine(resultado.resultado);
-        //Console.WriteLine(resultado.autor);
+        carro.NomeDoModelo();
+        carro2.NomeDoModelo();
 
-        (int resultado, string nome) = matematica.Subtrair(valor2: 1, valor1: 7);
+        //carro.Modelo = "Lamborghini";
+        //carro.Cor = Cor.Amarelo;
+        //carro.LancadoEm = new DateOnly(2020, 01, 01);
 
-        //Console.WriteLine(resultado);
-        //Console.WriteLine(nome);
-
-        matematica.Teste(valor1: 2, valor2: 1);
+        //carro.NomeDoModelo();
     }
 }
