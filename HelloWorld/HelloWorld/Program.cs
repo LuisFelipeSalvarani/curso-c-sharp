@@ -4,6 +4,9 @@ class Program
 {
     static void Main()
     {
-        object minhaVaraivel = "felipe";
+        int? idade = null;
+
+        bool informouIdade = idade.HasValue;
+        int minhaIdade = idade.Value;
     }
 }
